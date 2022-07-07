@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>ChimpNet</title>
+  <style>
+    header{
+        background-image: url(static/images/chimp.jpeg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+    }
+    .section{
+        padding-top:4vw;
+        padding-bottom: 4vw;
+    }
+    .align-justify{
+        text-align: justify;
+    }
+    @media screen and (max-width: 670px){
+        header{
+            min-height: 500px;
+        }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">
+                    ChimpNet
+                </a>
+                <a href="#" data-target="mobile-links" class="sidenav-trigger"> <i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="">Home</a></li>
+                    <li><a href="#" class="">About</a></li>
+                    <li><a href="#" class="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="#" class="">Home</a></li>
+            <li><a href="#" class="">About</a></li>
+            <li><a href="#" class="">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="contain margin-left">
+        <div class="row">
+              <div class="col s12 m8 l8">
+                <form method="POST" action="#" id="form" class="form">
+                    <div class="input-field col s12 m6 l6">
+                        <input id="x1" type="text" class="validate">
+                        <label for="x1">X1</label>
+                        <!-- <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> -->
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="x2" type="text" class="validate">
+                            <label for="x2">X2</label>
+                            <!-- <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> -->
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="x3" type="text" class="validate">
+                            <label for="x3">X3</label>
+                            <!-- <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> -->
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input id="x4" type="text" class="validate">
+                            <label for="name">X4</label>
+                            <!-- <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> -->
+                        </div>
+                        <br />
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p id="response" class="teal-text"></p>
+                            </div>
+                        </div>
+                    <div class="input-field col s12 m6 l6">
+                        <a class="waves-effect waves-light btn-large" id="submit">Submit</a>
+                    </div>
+                </form>
+                </div>
+                <div class="col m4 l4 s12">
+
+                    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+                </div>
+                </div>
+                      
+                </form>
+              </div>
+              <div class="col m4 l4 s12">
+
+                <!-- <canvas id="myChart" style="width:100%;max-width:700px"></canvas> -->
+                <canvas id="myChart"></canvas>
+
+            </div>
+            </div>
+        </div>
+    </div>
+  <!-- footer -->
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">CBC Osnabrueck University</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="https://yusufbrima.github.io/">Yusuf</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        
+        $('#submit').click(function(e){
+            let message = {
+                        x1: $("#x1").val(),
+                        x2: $("#x2").val(),
+                        x3: $("#x3").val(),
+                        x4: $("#x4").val()
+                    }
+            $.post("http://127.0.0.1:5000/test", JSON.stringify(message), function(response){
+                $("#greeting").text(response.greeting);
+                console.log(response.greeting);
+
+
+                var xValues = ["Cat", "Dog", "Elephant", "Mouse"];
+                var yValues = response.greeting //[55, 49, 44, 24];
+                var barColors = 'teal' //["red", "green","blue","orange"];
+                new Chart("myChart", {
+                    type: "bar",
+                    data: {
+                        labels: xValues,
+                        axis: 'y',
+                        datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                        }]
+                    },
+                    options: {
+                        legend: {display: false},
+                        indexAxis: 'y',
+                        title: {
+                        display: true,
+                        text: "Predicted Probabilities, True Class = " + xValues[0] 
+                        }
+                    }
+                });
+
+
+            });
+
+            
+            
+        });
+    });
+  </script>
+</body>
+</html>

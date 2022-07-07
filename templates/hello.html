@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hello world
+        </title>
+    </head>
+    <body>
+        <h1>We are programming from the web</h1>
+        <section>
+            <form method="POST" action="#" id="form">
+                <input id="name-input" type="text"/>
+                <button id="name-button">Submit Name</button>
+                <p id="greeting"></p>
+            </form>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready( function(){
+                $('#form').click(function(e){
+                    e.preventDefault();
+                    let message = {
+                        name: $("#name-input").val()
+                    }
+                    $.post("http://127.0.0.1:5000/hello", JSON.stringify(message), function(response){
+                        $("#greeting").text(response.greeting);
+                        console.log(response);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

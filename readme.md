@@ -2,6 +2,10 @@
 
 This codebase is to deploy a simple Speaker Verification System trained and evaluated on Chimpanzee Pant Hoot Vocalization dataset.
 
+## Web Access link
+
+![ChimpNet](https://chimpnet.ikw.uos.de/)
+
 ## Description
 
 This is a proof-of-concept to allow non-programmers from the CBC (and elsewhere?) to gain access to the model for inference via a simple web interface. However, the code is underdevelopment and will be incrementally improved.

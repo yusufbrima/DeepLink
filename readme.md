@@ -4,7 +4,7 @@ This codebase is to deploy a simple Speaker Verification System trained and eval
 
 ## Web Access link
 
-![ChimpNet](https://chimpnet.ikw.uos.de/)
+[ChimpNet](https://chimpnet.ikw.uos.de/)
 
 ## Description
 
